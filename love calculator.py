@@ -1,28 +1,27 @@
 print("LOVE CALCULATOR")
 
-name1=input("What is your name?\n")
-name2=input("what is the name of your partner\n")
+name1 = input("What is your name?\n")
+name2 = input("What is the name of your partner?\n")
 
-t=name1.count("t")
-r=name1.count("r")
-u=name1.count("u")
-e=name1.count("e")
+t = name1.count("t")
+r = name1.count("r")
+u = name1.count("u")
+e = name1.count("e")
 
-true=t+r+u+e
+true = t + r + u + e
 
-l=name2.count("l")
-o=name2.count("o")
-v=name2.count("v")
-e=name2.count("e")
+l = name2.count("l")
+o = name2.count("o")
+v = name2.count("v")
+e = name2.count("e")
 
-love=l+o+v+e
-yourlovecore=str(love)+str(true)
+love = l + o + v + e
+yourlovecore = int(str(love) + str(true))  # Convert the concatenated string to an integer
 print(yourlovecore)
 
-if yourlovecore<10 or yourlovecore>90:
-    print(f"Your score is {yourlovecore} and you go like coke and mentos")
-elif yourlovecore>=40 or yourlovecore<=50:
-    print(f"Your score is {yourlovecore} ,youralright together")
+if yourlovecore < 10 or yourlovecore > 90:
+    print(f"Your score is {yourlovecore}, and you go together like coke and mentos.")
+elif 40 <= yourlovecore <= 50:
+    print(f"Your score is {yourlovecore}, you're alright together.")
 else:
-    print(f"your score is{yourlovecore}")
-
+    print(f"Your score is {yourlovecore}.")
